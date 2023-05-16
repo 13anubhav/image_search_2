@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Holiday Socho Image Search 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: coral;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Holiday Socho Image Search 2</h1>
+    </header>
+    <main>
+        <form id="search-form">
+            <input type="text" id="search-term-1" placeholder="Enter search term 1">
+            <input type="text" id="search-term-2" placeholder="Enter search term 2">
+            <input type="text" id="search-term-3" placeholder="Enter search term 3">
+            <button type="submit">Search</button>
+        </form>
+        <div id="image-container-1" class="image-container"></div>
+        <div id="image-container-2" class="image-container"></div>
+        <div id="image-container-3" class="image-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
